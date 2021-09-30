@@ -1,0 +1,20 @@
+
+<h3>Dashboard</h3>
+<mat-drawer-container class="example-container" autosize>
+  <mat-drawer #drawer class="example-sidenav" mode="side">
+    <p>About Us</p>
+    <p *ngIf="showFiller">Lorem, ipsum dolor sit amet consectetur.</p>
+    <button (click)="showFiller = !showFiller" mat-raised-button>
+      read more
+    </button>
+  </mat-drawer>
+
+  <div class="example-sidenav-content">
+    <button type="button" mat-button (click)="drawer.toggle()">
+      go here
+    </button>
+  </div>
+</mat-drawer-container>
+<br>
+<button routerLink="/login" mat-raised-button color="primary">Back</button>
+
