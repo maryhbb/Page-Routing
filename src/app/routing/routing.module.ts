@@ -9,11 +9,28 @@ const routes: Routes = [
   {
     path: 'login',
     component: LoginPage
-      },
-      {
-        path: 'dashboard',
-        component: DashboardPage
-      }
+  },
+  {
+    path: 'dashboard',
+    component: DashboardPage
+  },
+  {
+    path: '',
+    component: LoginPage
+  },
+  // {
+  //   path: 'login',
+  //   children: [
+  //     {
+  //       path: '',
+  //       component: LoginPage
+  //     },
+  //     {
+  //       path: 'dashboard',
+  //       component: DashboardPage
+  //     },
+  //   ]
+  // }
 ]
 
 @NgModule({
