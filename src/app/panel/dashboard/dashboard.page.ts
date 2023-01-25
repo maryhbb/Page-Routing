@@ -6,7 +6,6 @@ import {Component, OnInit} from '@angular/core';
   styleUrls: ['./dashboard.page.css']
 })
 export class DashboardPage implements OnInit {
-  showFiller = false;
 
   constructor() {
   }
