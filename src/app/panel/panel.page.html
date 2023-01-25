@@ -1,5 +1,3 @@
-
-<h3>Dashboard</h3>
 <mat-drawer-container class="example-container" autosize>
   <mat-drawer #drawer class="example-sidenav" mode="side">
     <p>About Us</p>
@@ -10,11 +8,12 @@
   </mat-drawer>
 
   <div class="example-sidenav-content">
+    <router-outlet></router-outlet>
     <button type="button" mat-button (click)="drawer.toggle()">
       go here
     </button>
   </div>
 </mat-drawer-container>
 <br>
-<button routerLink="/login" mat-raised-button color="primary">Back</button>
+<button routerLink="/auth/login" mat-raised-button color="primary">Back</button>
 
